@@ -1,0 +1,114 @@
+/* Desktop style */
+.Navbar {
+    background-color: #dfdfdf;
+    margin: auto;
+}
+
+.Navbar-Sticky {
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.Navbar-Checkbox {
+    display: none;
+}
+
+.Navbar-Menu-Toggle {
+    display: none;
+}
+
+.Navbar-Link-List {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+.Navbar-Link {
+    padding: 15px;
+    color: #424242;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition-duration: .5s;
+    width: fit-content;
+}
+
+/* Navbar Links underline animation */
+.Navbar-Link::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    display: block;
+    background-color: #424242;
+    transition-duration: .5s;
+}
+
+.Navbar-Link:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    /* Navbar style */
+    .Navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: wrap;
+        background-color: #dfdfdf;
+    }
+    
+    .Navbar-Sticky {
+        position: sticky;
+        width: 100%;
+        top: 0;
+    }
+
+
+    /* Checbox and Toggler style */
+    .Navbar-Checkbox {
+        display: inherit;
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .Navbar-Checkbox:focus ~ .Navbar-Menu-Toggle {
+        outline: #00A1A1 auto 5px;
+    }
+
+    .Navbar-Menu-Toggle {
+        display: inherit;
+        font-size: 160%;
+        padding: 10px;
+    }
+
+    /* Links style */
+    .Navbar-Link {
+        color: #424242;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition-duration: .5s;
+        padding: 5px;
+    }
+
+    .Navbar-Link-List {
+        padding-left: 40px;
+        flex-basis: 100%;
+        margin: 0;
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: margin .5s ease-in-out, max-height .5s ease-in-out, opacity .3s .2s ease-in-out;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    /* Display links when checkbox is checked */
+    .Navbar-Checkbox:checked + .Navbar-Link-List {
+        margin: 1em 0;
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
