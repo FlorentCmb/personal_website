@@ -5,8 +5,6 @@
 }
 
 .Navbar-Sticky {
-    background-color: #dfdfdf;
-    margin: auto;
     position: sticky;
     width: 100%;
     top: 0;
@@ -59,6 +57,13 @@
         flex-flow: wrap;
         background-color: #dfdfdf;
     }
+    
+    .Navbar-Sticky {
+        position: sticky;
+        width: 100%;
+        top: 0;
+    }
+
 
     /* Checbox and Toggler style */
     .Navbar-Checkbox {
@@ -68,7 +73,7 @@
         height: 0;
     }
 
-    .Navbar-Checkbox:focus+.Navbar-Menu-Toggle {
+    .Navbar-Checkbox:focus ~ .Navbar-Menu-Toggle {
         outline: #00A1A1 auto 5px;
     }
 
@@ -84,7 +89,7 @@
         text-decoration: none;
         text-transform: uppercase;
         transition-duration: .5s;
-        width: fit-content;
+        padding: 5px;
     }
 
     .Navbar-Link-List {
@@ -100,7 +105,7 @@
     }
 
     /* Display links when checkbox is checked */
-    .Navbar-Checkbox:checked+.Navbar-Link-List {
+    .Navbar-Checkbox:checked + .Navbar-Link-List {
         margin: 1em 0;
         max-height: 500px;
         opacity: 1;
