@@ -26,7 +26,7 @@
 }
 
 .Navbar-Link {
-    padding: 15px;
+    padding: 16px;
     color: var(--mainTextColor);
     text-decoration: none;
     text-transform: uppercase;
@@ -74,9 +74,12 @@
     }
 
     .Navbar-Menu-Toggle {
+        height: fit-content;
         display: inherit;
         font-size: 160%;
         padding: 10px;
+        color: var(--mainTextColor);
+        margin: auto 0;
     }
 
     /* Links style */
