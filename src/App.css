@@ -1,0 +1,6 @@
+/* Variables */
+.App {
+    --mainBgColor: rgb(223, 45, 21);
+    --mainTextColor: rgb(226, 226, 226);
+    --secondBgColor: rgb(63, 63, 63);
+}

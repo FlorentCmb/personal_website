@@ -7,7 +7,7 @@ import './App.css'
 
 const App = () => {
   return (
-    <main>
+    <main className="App">
       <Navbar />
     </main>
   )
