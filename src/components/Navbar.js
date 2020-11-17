@@ -31,7 +31,7 @@ const Navbar = () => {
             <input type="checkbox" id="Navbar-Checkbox" className="Navbar-Checkbox" />
             <div className="Navbar-Link-List">
                 <Link className="Navbar-Link" to="/">Home</Link>
-                <Link className="Navbar-Link" to="/">Professional background</Link>
+                <Link className="Navbar-Link" to="/professional-background">Professional background</Link>
                 <Link className="Navbar-Link" to="/">Skills</Link>
             </div>
         </nav>
