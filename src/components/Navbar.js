@@ -27,7 +27,7 @@ const Navbar = () => {
 
     return (
         <nav className={`Navbar ${isSticky ? 'Navbar-Sticky' : ''}`}>
-            <label for="Navbar-Checkbox" className="Navbar-Menu-Toggle">≡</label>
+            <label htmlFor="Navbar-Checkbox" className="Navbar-Menu-Toggle">≡</label>
             <input type="checkbox" id="Navbar-Checkbox" className="Navbar-Checkbox" />
             <div className="Navbar-Link-List">
                 <Link className="Navbar-Link" to="/">Home</Link>
