@@ -1,6 +1,6 @@
 /* Desktop style */
 .Navbar {
-    background-color: #dfdfdf;
+    background-color: var(--mainBgColor);
     margin: auto;
 }
 
@@ -27,7 +27,7 @@
 
 .Navbar-Link {
     padding: 15px;
-    color: #424242;
+    color: var(--mainTextColor);
     text-decoration: none;
     text-transform: uppercase;
     transition-duration: .5s;
@@ -40,7 +40,7 @@
     width: 0;
     height: 1px;
     display: block;
-    background-color: #424242;
+    background-color: var(--mainTextColor);
     transition-duration: .5s;
 }
 
@@ -55,7 +55,7 @@
         align-items: center;
         justify-content: space-between;
         flex-flow: wrap;
-        background-color: #dfdfdf;
+        background-color: var(--mainBgColor);
     }
     
     .Navbar-Sticky {
@@ -73,10 +73,6 @@
         height: 0;
     }
 
-    .Navbar-Checkbox:focus ~ .Navbar-Menu-Toggle {
-        outline: #00A1A1 auto 5px;
-    }
-
     .Navbar-Menu-Toggle {
         display: inherit;
         font-size: 160%;
@@ -85,7 +81,7 @@
 
     /* Links style */
     .Navbar-Link {
-        color: #424242;
+        color: var(--mainTextColor);
         text-decoration: none;
         text-transform: uppercase;
         transition-duration: .5s;
