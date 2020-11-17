@@ -1,6 +1,7 @@
 // Librairies
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { BrowserRouter } from 'react-router-dom'
 // Functions
 import reportWebVitals from './reportWebVitals'
 // Components
@@ -9,9 +10,11 @@ import App from './App'
 import './index.css'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </BrowserRouter>,
   document.getElementById('root')
 )
 
