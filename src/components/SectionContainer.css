@@ -1,0 +1,57 @@
+/* Section Container */
+.SectionContainer {
+    height: calc(100vh - 55px);
+    margin: 0;
+    background-color: var(--secondBgColor);
+    display: flex;
+    flex-flow: row wrap;
+    color: var(--secondTextColor);
+    border-top: 1px solid var(--secondTextColor);
+    box-shadow: inset 0px 1px 6px var(--secondTextColor);
+}
+
+.SectionContainer-Sticky {
+    position: sticky;
+    width: 100%;
+    top: 54px;
+}
+
+/* Text part */
+.SectionContainer-Text-Container {
+    height: 100%;
+    width: 70%;
+}
+
+.SectionContainer-Text-Container div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.SectionContainer-Title  {
+    margin-top: 0;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--thirdTextColor);
+    font-size: 150%;
+    margin-left: 5%;
+}
+
+.SectionContainer-Text {
+    font-size: 120%;
+    width: 90%;
+    margin: auto;
+    text-indent: 40px;
+}
+
+/* Image part */
+.SectionContainer-Image-Container {
+    height: 100%;
+    width: 30%;
+}
+
+.SectionContainer-Image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
