@@ -29,6 +29,7 @@
 }
 
 .SectionContainer-Title  {
+    max-width: 90%;
     margin-top: 0;
     text-decoration: underline;
     text-transform: uppercase;
