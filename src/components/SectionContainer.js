@@ -50,7 +50,7 @@ SectionContainer.propTypes = {
     textToRight: PropTypes.bool,
 }
 
-SectionContainer.propTypes = {
+SectionContainer.defaultProps = {
     textToRight: false
 }
 
