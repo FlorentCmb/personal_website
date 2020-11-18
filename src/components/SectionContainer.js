@@ -19,9 +19,9 @@ const SectionContainer = props => {
         setTimeout(() => {
             // Get element's Y position on the page
             height = element.offsetTop
-            // Event listener to decide if the menu is sticky or not
-            window.addEventListener('scroll', () => handleScroll(height))
         }, 600)
+        // Event listener to decide if the menu is sticky or not
+        window.addEventListener('scroll', () => handleScroll(height))
 
         // Remove the event listener whenever we destroy the component
         return () => window.removeEventListener('scroll', () => handleScroll(height))
