@@ -21,8 +21,13 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', () => handleScroll(height))
     }, [])
 
+    // Functions
     const handleScroll = height => {
         window.pageYOffset > height ? setIsSticky(true) : setIsSticky(false)
+    }
+    
+    const hideBurger = () => {
+        document.querySelector('#Navbar-Checkbox').checked = false
     }
 
     return (
@@ -30,9 +35,9 @@ const Navbar = () => {
             <label htmlFor="Navbar-Checkbox" className="Navbar-Menu-Toggle">≡ Menu</label>
             <input type="checkbox" id="Navbar-Checkbox" className="Navbar-Checkbox" />
             <div className="Navbar-Link-List">
-                <Link className="Navbar-Link" to="/">Home</Link>
-                <Link className="Navbar-Link" to="/professional-background">Professional background</Link>
-                <Link className="Navbar-Link" to="/">Skills</Link>
+                <Link className="Navbar-Link" to="/" onClick={hideBurger}>Home</Link>
+                <Link className="Navbar-Link" to="/professional-background" onClick={hideBurger}>Professional background</Link>
+                <Link className="Navbar-Link" to="/" onClick={hideBurger}>Skills</Link>
             </div>
         </nav>
     )
