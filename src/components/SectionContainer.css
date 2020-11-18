@@ -56,3 +56,29 @@
     width: 100%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+    .SectionContainer {
+        flex-flow: column wrap;
+    }
+
+    /* Text part */
+    .SectionContainer-Text-Container {
+        height: 65%;
+        width: 100%;
+    }
+
+    .SectionContainer-Title {
+        font-size: 110%;
+    }
+
+    .SectionContainer-Text {
+        font-size: 80%;
+    }
+
+    /* Image part */
+    .SectionContainer-Image-Container {
+        height: 35%;
+        width: 100%;
+    }
+}

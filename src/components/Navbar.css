@@ -2,6 +2,7 @@
 .Navbar {
     background-color: var(--mainBgColor);
     margin: auto;
+    z-index: 100;
 }
 
 .Navbar-Sticky {

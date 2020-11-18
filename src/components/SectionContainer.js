@@ -13,9 +13,13 @@ const SectionContainer = props => {
 
     // When the Navbar is mounted
     useEffect(() => {
-        // Get element's Y position on the page
         const element = document.querySelector('.SectionContainer')
-        const height = element.offsetTop
+        let height
+        // Add a timeout to avoid a bug on mobile view (height was bigger because when the component mount, the burger menu was still opened)
+        setTimeout(() => {
+            // Get element's Y position on the page
+            height = element.offsetTop
+        }, 600)
         // Event listener to decide if the menu is sticky or not
         window.addEventListener('scroll', () => handleScroll(height))
 
@@ -50,7 +54,7 @@ SectionContainer.propTypes = {
     textToRight: PropTypes.bool,
 }
 
-SectionContainer.propTypes = {
+SectionContainer.defaultProps = {
     textToRight: false
 }
 
