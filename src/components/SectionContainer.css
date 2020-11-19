@@ -45,6 +45,15 @@
     text-indent: 40px;
 }
 
+.SectionContainer-Link {
+    color: var(--thirdTextColor);
+}
+
+/* Hover effect */
+.SectionContainer:hover .SectionContainer-Image {
+    filter: brightness(100%) blur(0px);
+}
+
 /* Image part */
 .SectionContainer-Image-Container {
     height: 100%;
@@ -55,6 +64,8 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    filter: brightness(80%) blur(2px);
+    transition-duration: .5S;
 }
 
 @media screen and (max-width: 768px) {
