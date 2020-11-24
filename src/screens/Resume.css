@@ -8,3 +8,13 @@
     width: 90%;
     height: calc(100vh - 54px);
 }
+
+.Resume-Default-Text {
+    margin: auto;
+    color: var(--secondTextColor);
+    padding-top: 5%;
+}
+
+.Resume-Default-Link {
+    color: var(--thirdTextColor);
+}
