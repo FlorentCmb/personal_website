@@ -9,7 +9,7 @@ const Resume = () => {
     return (
         <div className="Resume">
             <object className="Resume-File"  data={resume_file} type="application/pdf">
-                <p className="Resume-Default-Text">If the PDF isn't displayed you can still download <a className="Resume-Default-Link" href={resume_file}>here</a>.</p>
+                <p className="Resume-Default-Text">If the PDF isn't displayed you can still download it <a className="Resume-Default-Link" href={resume_file}>here</a>.</p>
             </object>
         </div>
     )
