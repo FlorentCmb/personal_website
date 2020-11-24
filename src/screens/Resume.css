@@ -1,18 +1,18 @@
 .Resume {
     background-color: var(--secondBgColor);
+    padding-top: 5%;
 }
 
 .Resume-File {
+    width: 90%;
     display: block;
     margin: auto;
-    width: 90%;
     height: calc(100vh - 54px);
 }
 
 .Resume-Default-Text {
     margin: auto;
     color: var(--secondTextColor);
-    padding-top: 5%;
 }
 
 .Resume-Default-Link {
