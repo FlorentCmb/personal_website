@@ -58,8 +58,8 @@ const Home = () => {
                 listArray={[
                     { name: <span title="Icon by FontAwesome"><FontAwesomeIcon icon={faGithub} /> Github</span>, value: "FlorentCmb" },
                     { name: <span title="Icon by FontAwesome"><FontAwesomeIcon icon={faLinkedin} /> LinkedIn</span>, value: "Florent Combeau" },
-                    { name: <span title="Icon by FontAwesome"><FontAwesomeIcon icon={faPhone} /> Github</span>, value: "06 18 62 19 36" },
-                    { name: <span title="Icon by FontAwesome"><FontAwesomeIcon icon={faEnvelope} /> Github</span>, value: "florent.combeau@protonmail.ch" },
+                    { name: <span title="Icon by FontAwesome"><FontAwesomeIcon icon={faPhone} /> Téléphone</span>, value: "06 18 62 19 36" },
+                    { name: <span title="Icon by FontAwesome"><FontAwesomeIcon icon={faEnvelope} /> E-mail</span>, value: "florent.combeau@protonmail.ch" },
                 ]}
             />
         </section>
