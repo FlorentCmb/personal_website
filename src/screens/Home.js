@@ -23,7 +23,6 @@ import {
     faUbuntu,
     faLinkedin,
     faGithub,
-    faInstagram,
 } from '@fortawesome/free-brands-svg-icons'
 // Style
 import './Home.css'
