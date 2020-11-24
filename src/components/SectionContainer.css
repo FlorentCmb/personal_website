@@ -1,6 +1,6 @@
 /* Section Container */
 .SectionContainer {
-    height: calc(100vh - 55px);
+    height: calc(100vh - 54px);
     margin: 0;
     background-color: var(--secondBgColor);
     display: flex;
@@ -91,5 +91,9 @@
     .SectionContainer-Image-Container {
         height: 35%;
         width: 100%;
+    }
+
+    .SectionContainer-Image {
+        filter: brightness(100%) blur(0px);
     }
 }
