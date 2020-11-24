@@ -1,3 +1,7 @@
+.Resume {
+    background-color: var(--secondBgColor);
+}
+
 .Resume-File {
     display: block;
     margin: auto;
