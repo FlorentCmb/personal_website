@@ -42,7 +42,7 @@ const Navbar = () => {
             <div className="Navbar-Link-List">
                 <Link className="Navbar-Link" to="/" onClick={hideBurger}>Home</Link>
                 <Link className="Navbar-Link" to="/professional-background" onClick={hideBurger}>Professional background</Link>
-                <Link className="Navbar-Link" to="/" onClick={hideBurger}>Skills</Link>
+                <Link className="Navbar-Link" to="/resume" onClick={hideBurger}>Resume</Link>
             </div>
         </nav>
     )
