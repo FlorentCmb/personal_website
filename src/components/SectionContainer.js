@@ -6,7 +6,7 @@ import './SectionContainer.css'
 
 const SectionContainer = props => {
     // Props
-    const { title, text, img, textToRight } = props
+    const { title, text, img, textToRight, link } = props
 
     // States
     const [isSticky, setIsSticky] = useState(false)
@@ -37,7 +37,7 @@ const SectionContainer = props => {
             <div className="SectionContainer-Text-Container" style={{ order: textToRight ? 2 : 1 }}>
                 <div>
                     <h3 className="SectionContainer-Title">{title}</h3>
-                    <p className="SectionContainer-Text">{text}</p>
+                    <p className="SectionContainer-Text">{text} {link ? <a className="SectionContainer-Link" href={link} target="_blank" rel="noreferrer noopener">See more</a> : ''}</p>
                 </div>
             </div>
             <div className="SectionContainer-Image-Container" style={{ order: textToRight ? 1 : 2 }}>
@@ -52,10 +52,12 @@ SectionContainer.propTypes = {
     text: PropTypes.string.isRequired,
     img: PropTypes.string.isRequired,
     textToRight: PropTypes.bool,
+    link: PropTypes.string,
 }
 
 SectionContainer.defaultProps = {
-    textToRight: false
+    textToRight: false,
+    link: ""
 }
 
 export default SectionContainer

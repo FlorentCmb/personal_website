@@ -28,6 +28,11 @@ const Navbar = () => {
     
     const hideBurger = () => {
         document.querySelector('#Navbar-Checkbox').checked = false
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
     }
 
     return (
