@@ -3,6 +3,7 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 // Screens
 import Home from './screens/Home'
+import Resume from './screens/Resume'
 import ProfessionalBackground from './screens/ProfessionalBackground'
 // Components
 import Banner from './components/Banner'
@@ -21,6 +22,9 @@ const App = () => {
         </Route>
         <Route exact path="/professional-background">
           <ProfessionalBackground />
+        </Route>
+        <Route path="/resume">
+          <Resume />
         </Route>
       </Switch>
     </main>
